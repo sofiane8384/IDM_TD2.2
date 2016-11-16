@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="iDM_TD3" nsURI="http://www.example.org/iDM_TD3" nsPrefix="iDM_TD3">
-  <eClassifiers xsi:type="ecore:EClass" name="Hotel">
+  <eClassifiers xsi:type="ecore:EClass" name="Hotels">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="NomHotel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="chambre" lowerBound="1"
         upperBound="-1" eType="#//Chambre" eOpposite="#//Chambre/hotel"/>
@@ -12,8 +12,8 @@
     <eOperations name="CalculPrixLocation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_chambre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_etage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hotel" lowerBound="1" eType="#//Hotel"
-        eOpposite="#//Hotel/chambre"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hotel" lowerBound="1" eType="#//Hotels"
+        eOpposite="#//Hotels/chambre"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="a_prestations" lowerBound="1"
         upperBound="-1" eType="#//Prestation"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="est_loué" eType="#//Hote"
