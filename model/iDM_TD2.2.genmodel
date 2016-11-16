@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/IDM_TD3/src" modelPluginID="IDM_TD3" modelName="IDM_TD3"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>iDM_TD3.ecore</foreignModel>
+  <genPackages prefix="IDM_TD3" disposableProviderFactory="true" ecorePackage="iDM_TD3.ecore#/">
+    <genClasses ecoreClass="iDM_TD3.ecore#//Hotel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iDM_TD3.ecore#//Hotel/NomHotel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iDM_TD3.ecore#//Hotel/chambre"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iDM_TD3.ecore#//Hotel/a_responsable"/>
+    </genClasses>
+    <genClasses ecoreClass="iDM_TD3.ecore#//Chambre">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iDM_TD3.ecore#//Chambre/num_chambre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iDM_TD3.ecore#//Chambre/num_etage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iDM_TD3.ecore#//Chambre/hotel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iDM_TD3.ecore#//Chambre/a_prestations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iDM_TD3.ecore#//Chambre/est_loué"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iDM_TD3.ecore#//Chambre/a_salle_de_bain"/>
+      <genOperations ecoreOperation="iDM_TD3.ecore#//Chambre/CalculPrixLocation"/>
+    </genClasses>
+    <genClasses ecoreClass="iDM_TD3.ecore#//Responsable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iDM_TD3.ecore#//Responsable/nom_responsable"/>
+    </genClasses>
+    <genClasses ecoreClass="iDM_TD3.ecore#//Prestation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iDM_TD3.ecore#//Prestation/Prix_Prestation"/>
+    </genClasses>
+    <genClasses ecoreClass="iDM_TD3.ecore#//Hote">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iDM_TD3.ecore#//Hote/loue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute iDM_TD3.ecore#//Hote/NomHote"/>
+    </genClasses>
+    <genClasses ecoreClass="iDM_TD3.ecore#//Salle_de_bain"/>
+  </genPackages>
+</genmodel:GenModel>
